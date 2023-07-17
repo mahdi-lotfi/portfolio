@@ -7,6 +7,27 @@
 
 body {
     background-color: rgb(10, 25, 47);
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    padding: 15px 65px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid;
+ transition: .3s;
+
+}
+button a{
+font-size: 20px;
+
+text-decoration: none;
+color: #fff;
+}
+button:hover {
+    background-color: #ff014f;
+
 }
 
 .contener {
@@ -41,9 +62,11 @@ body {
     color: rgb(91, 104, 130);
     transition: .3s;
 }
+
 .nav-bar ul li a:hover {
-color: #ff014f;
+    color: #ff014f;
 }
+
 .imag img {
     width: 50px;
 }
@@ -59,4 +82,43 @@ color: #ff014f;
     .nav-bar ul {
         display: none;
     }
+}
+
+.Home {
+    color: rgb(91, 104, 130);
+
+}
+
+.Home .contener{
+    display: flex;
+    align-items: center;
+}
+.Home .contener .none{
+   margin: 300px;
+}
+
+.Home .contener h4 {
+    font-size: 22px;
+    color: #ff014f;
+}
+
+.Home .contener h1 {
+    color: #fff;
+    font-size: 55px;
+    padding: 10px 0;
+}
+
+.Home .contener p {
+    padding-bottom: 20px;
+}
+@media (max-width:991px) {
+    .Home .contener{
+       margin-top: 40px;
+       }
+    .Home .contener .none{
+      display: none;
+     }
+     .Home .contener .content{
+        text-align: center;
+     }
 }
