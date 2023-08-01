@@ -10,25 +10,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-button {
-    padding: 15px 65px;
-    border-radius: 5px;
-    background: transparent;
-    color: #fff;
-    border: 2px solid;
-    transition: .8s;
-
+ul li a {
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    color: black;
 }
 
-button a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-}
-
-button:hover {
+ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
     background-color: #ff014f;
+    bottom: -5px;
+    left: 0;
+    transition: .3s;
+}
 
+ul li a:hover::after {
+    width: 100%;
 }
 
 .contener {
@@ -93,6 +94,27 @@ button:hover {
 .Home .contener {
     display: flex;
     align-items: center;
+}
+
+.Home button {
+    padding: 15px 65px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid;
+    transition: .4s;
+
+}
+
+.Home button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.Home button:hover {
+    background-color: #ff014f;
+
 }
 
 .Home .contener .none {
@@ -182,14 +204,14 @@ button:hover {
     }
 
     .About .contener .content h2 {
-        width:100%;
+        width: 100%;
         text-align: center;
         order: 1;
 
     }
 
     .About .contener .content p {
-        width:100%;
+        width: 100%;
         text-align: center;
         order: 2;
     }
@@ -214,19 +236,16 @@ button:hover {
 
 .Skills .contener p {
     color: rgb(91, 104, 130);
-    padding-top: 10px;
+    padding: 10px;
 }
-.Skills .boxes .box h2{
+
+.Skills .boxes .box h2 {
     color: #fff;
     justify-content: center;
     display: flex;
-  }
-
-.Skills .contener .boxes {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
 }
+
+
 
 .Skills .contener .boxes .box img {
     width: 80px;
@@ -243,28 +262,133 @@ button:hover {
 }
 
 .Skills .contener .boxes .box-1 {
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 80px;
+    text-align: center;
 }
 
-.Skills .contener .boxes .box-2 {
-    gap: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.work .contener h1 {
+    font-size: 50px;
+    color: #fff;
+    border-bottom: 4px solid #ff014f;
+    display: inline-block;
+    padding-top: 200px;
 }
-/* @media (max-width:991px){
-    .Skills .contener .boxes .box-1,.box-2 {
-        flex-wrap: wrap;
+
+.work .contener p {
+    color: rgb(91, 104, 130);
+    padding: 10px;
+}
+
+.work .contener .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 20px;
     text-align: center;
-    }
-} */
-@media (max-width:768px){
-    .Skills .contener .boxes .box-1,.box-2 {
-        flex-direction: column;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    padding: 38px 10px;
+}
+
+.work .contener .image img {
+    margin: 0 auto;
+}
+
+.work .contener .box_images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     text-align: center;
-    }
+    gap: 25px;
+
+}
+
+.work .contener .image .btns {
+    position: absolute;
+    background-color: #ff014f;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.70;
+    transition: .3s;
+}
+
+.work .contener .image .btns span {
+    margin: 0 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: black;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.work .contener .image:hover .btns {
+    top: 0;
+}
+
+
+
+.Contact_Us .contener h1 {
+    font-size: 50px;
+    color: #fff;
+    border-bottom: 4px solid #ff014f;
+    display: inline-block;
+    padding-top: 200px;
+}
+
+.Contact_Us .contener form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px 0px;
+}
+
+.Contact_Us .contener form input {
+    background: rgb(0, 0, 27);
+    border: none;
+    padding: 10px 0;
+    border-radius: 25px;
+    padding-left: 25px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.Contact_Us .contener form textarea {
+    height: 200px;
+    background: rgb(0, 0, 27);
+    border: none;
+    padding: 10px 0;
+    border-radius: 25px;
+    padding-left: 25px;
+    color: #fff;
+    font-size: 20px;
+    resize: none;
+}
+
+.Contact_Us .contener button {
+    padding: 15px 65px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid;
+    transition: .4s;
+}
+
+.Contact_Us .contener button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.Contact_Us .contener button:hover {
+    background-color: #ff014f;
 }
