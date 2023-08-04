@@ -41,6 +41,7 @@ ul li a:hover::after {
 .nav-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar ul {
@@ -232,11 +233,12 @@ ul li a:hover::after {
     border-bottom: 4px solid #ff014f;
     display: inline-block;
     padding-top: 200px;
+
 }
 
 .Skills .contener p {
     color: rgb(91, 104, 130);
-    padding: 10px;
+    margin-top: 20px;
 }
 
 .Skills .boxes .box h2 {
@@ -255,6 +257,7 @@ ul li a:hover::after {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
     padding: 20px 80px;
     transition: scale 300ms;
+    margin-top: 40px;
 }
 
 .Skills .contener .boxes .box:hover {
@@ -303,11 +306,13 @@ ul li a:hover::after {
     text-align: center;
     gap: 25px;
 
+
 }
 
 .work .contener .image .btns {
     position: absolute;
     background-color: #ff014f;
+    background-color: rgba(10, 40, 120, .8);
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -316,7 +321,6 @@ ul li a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.70;
     transition: .3s;
 }
 
