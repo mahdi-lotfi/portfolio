@@ -70,8 +70,19 @@ ul li a:hover::after {
     color: #ff014f;
 }
 
+.nav-bar .imag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-bar .imag .imag-title{
+    color:#ff014f;
+}
 .imag img {
+    height: 50px;
     width: 50px;
+    border-radius: 50%;
+
 }
 
 @media (max-width:991px) {
@@ -114,7 +125,7 @@ ul li a:hover::after {
 }
 
 .Home button:hover {
-    background-color: #ff014f;
+    background-color: #cb0e5a;
 
 }
 
@@ -166,7 +177,7 @@ ul li a:hover::after {
     text-align: center;
     color: #fff;
     font-size: 40px;
-    line-height: 80px;
+    line-height: 55px;
     border-bottom: 4px solid #ff014f;
     display: inline-block;
     justify-content: center;
@@ -191,9 +202,21 @@ ul li a:hover::after {
 
 .About .contener .content {
     display: flex;
+    align-items: center;
     gap: 25px;
 
 }
+
+.About .contener .content .image {
+    flex: 1;
+}
+
+.About .contener .content .image img {
+    width: 300px;
+    border-radius: 25px;
+
+}
+
 
 @media (max-width:1024px) {
     .About h1 {
@@ -267,7 +290,7 @@ ul li a:hover::after {
 .Skills .contener .boxes .box-1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-    gap: 80px;
+    gap: 33px;
     text-align: center;
 }
 
@@ -305,8 +328,7 @@ ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     text-align: center;
     gap: 25px;
-
-
+    margin-top: 30px;
 }
 
 .work .contener .image .btns {
@@ -339,7 +361,9 @@ ul li a:hover::after {
     top: 0;
 }
 
-
+.Contact_Us {
+    margin-bottom: 80px;
+}
 
 .Contact_Us .contener h1 {
     font-size: 50px;
