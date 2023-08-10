@@ -185,9 +185,13 @@ ul li a:hover::after {
 
 
 }
+.About .contener .content .title{
+    width: 65%;
+    flex: 1;
+}
 
 .About .contener .content h2 {
-    width: 65%;
+    
     margin: 0 auto;
     color: #fff;
     font-size: 30px;
@@ -195,7 +199,7 @@ ul li a:hover::after {
 }
 
 .About .contener .content p {
-    width: 65%;
+   
     margin: 0 auto;
     order: 1;
 }
@@ -329,6 +333,7 @@ ul li a:hover::after {
     text-align: center;
     gap: 25px;
     margin-top: 30px;
+    display: inline-block;
 }
 
 .work .contener .image .btns {
@@ -360,7 +365,74 @@ ul li a:hover::after {
 .work .contener .image:hover .btns {
     top: 0;
 }
+ .certificate .contener h1 {
+    font-size: 50px;
+    color: #fff;
+    border-bottom: 4px solid #ff014f;
+    display: inline-block;
+    padding-top: 200px;
+}
 
+.certificate .contener p {
+    color: rgb(91, 104, 130);
+    padding: 10px;
+}
+
+.certificate .contener .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    padding: 38px 10px;
+}
+
+.certificate .contener .image img {
+    margin: 0 auto;
+}
+
+.certificate .contener .box_images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    text-align: center;
+    gap: 25px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.certificate .contener .image .btns {
+    position: absolute;
+    background-color: #ff014f;
+    background-color: rgba(10, 40, 120, .8);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.certificate .contener .image .btns span {
+    margin: 0 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: black;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.certificate .contener .image:hover .btns {
+    top: 0;
+}
+ 
 .Contact_Us {
     margin-bottom: 80px;
 }
