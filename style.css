@@ -8,6 +8,57 @@
 body {
     background-color: rgb(10, 25, 47);
     font-family: 'Poppins', sans-serif;
+    z-index: -1;
+}
+
+.section_button {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.fa {
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+}
+
+.li_section_button {
+    padding: 10px 0;
+    background: darkcyan;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.a_section_button {
+
+
+    height: 60px;
+    margin-left: -92px;
+    padding: 0 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.a_section_button:hover {
+    margin: 0;
+}
+
+.a_section_button::after {
+    display: none;
 }
 
 ul li a {
@@ -75,9 +126,11 @@ ul li a:hover::after {
     align-items: center;
     gap: 10px;
 }
-.nav-bar .imag .imag-title{
-    color:#ff014f;
+
+.nav-bar .imag .imag-title {
+    color: #ff014f;
 }
+
 .imag img {
     height: 50px;
     width: 50px;
@@ -185,13 +238,14 @@ ul li a:hover::after {
 
 
 }
-.About .contener .content .title{
+
+.About .contener .content .title {
     width: 65%;
     flex: 1;
 }
 
 .About .contener .content h2 {
-    
+
     margin: 0 auto;
     color: #fff;
     font-size: 30px;
@@ -199,7 +253,7 @@ ul li a:hover::after {
 }
 
 .About .contener .content p {
-   
+
     margin: 0 auto;
     order: 1;
 }
@@ -327,6 +381,7 @@ ul li a:hover::after {
 .work .contener .image img {
     margin: 0 auto;
     width: 100%;
+    z-index: -1;
 }
 
 .work .contener .box_images {
@@ -336,6 +391,7 @@ ul li a:hover::after {
     gap: 25px;
     margin-top: 30px;
     display: inline-block;
+
 }
 
 .work .contener .image .btns {
@@ -367,7 +423,8 @@ ul li a:hover::after {
 .work .contener .image:hover .btns {
     top: 0;
 }
- .certificate .contener h1 {
+
+.certificate .contener h1 {
     font-size: 50px;
     color: #fff;
     border-bottom: 4px solid #ff014f;
@@ -434,7 +491,7 @@ ul li a:hover::after {
 .certificate .contener .image:hover .btns {
     top: 0;
 }
- 
+
 .Contact_Us {
     margin-bottom: 80px;
 }
