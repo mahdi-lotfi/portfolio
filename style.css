@@ -515,7 +515,7 @@ ul li a:hover::after {
     background: rgb(0, 0, 27);
     border: none;
     padding: 10px 0;
-    border-radius: 25px;
+    border-radius: 10px;
     padding-left: 25px;
     color: #fff;
     font-size: 20px;
