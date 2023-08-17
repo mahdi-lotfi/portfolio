@@ -21,7 +21,7 @@ ul li a::after {
     content: "";
     position: absolute;
     width: 0;
-    height: 3px;
+    height: 2px;
     background-color: #ff014f;
     bottom: -5px;
     left: 0;
@@ -317,14 +317,16 @@ ul li a:hover::after {
     gap: 20px;
     text-align: center;
     overflow: hidden;
-    border: 2px solid black;
     position: relative;
     display: flex;
     padding: 38px 10px;
+    width: 400px;
+    height: auto;
 }
 
 .work .contener .image img {
     margin: 0 auto;
+    width: 100%;
 }
 
 .work .contener .box_images {
@@ -467,14 +469,14 @@ ul li a:hover::after {
     background: rgb(0, 0, 27);
     border: none;
     padding: 10px 0;
-    border-radius: 25px;
+    border-radius: 10px;
     padding-left: 25px;
     color: #fff;
     font-size: 20px;
     resize: none;
 }
 
-.Contact_Us .contener button {
+.Contact_Us .contener .content button {
     padding: 15px 65px;
     border-radius: 5px;
     background: transparent;
@@ -483,12 +485,12 @@ ul li a:hover::after {
     transition: .4s;
 }
 
-.Contact_Us .contener button a {
+.Contact_Us .contener .content button a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 
-.Contact_Us .contener button:hover {
+.Contact_Us .contener .content button:hover {
     background-color: #ff014f;
 }
