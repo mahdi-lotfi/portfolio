@@ -83,8 +83,15 @@ ul li a:hover::after {
     width: 100%;
 }
 
+@media (max-width:991px) {
+   
+    .section_button{
+       display: none;
+
+    }
+    }
 .contener {
-    max-width: 1224px;
+    max-width: 1000px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -239,6 +246,12 @@ ul li a:hover::after {
 
 }
 
+.About .contener {
+    max-width: 789px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
 .About .contener .content .title {
     width: 65%;
     flex: 1;
@@ -373,13 +386,15 @@ ul li a:hover::after {
     overflow: hidden;
     position: relative;
     display: flex;
-    padding: 38px 10px;
+top: 0;
+left: 0;
     width: 400px;
     height: auto;
 }
 
 .work .contener .image img {
-    margin: 0 auto;
+   
+
     width: 100%;
     z-index: -1;
 }
@@ -492,6 +507,7 @@ ul li a:hover::after {
     top: 0;
 }
 
+
 .Contact_Us {
     margin-bottom: 80px;
 }
@@ -551,3 +567,4 @@ ul li a:hover::after {
 .Contact_Us .contener .content button:hover {
     background-color: #ff014f;
 }
+
