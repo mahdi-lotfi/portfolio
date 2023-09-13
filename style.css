@@ -17,34 +17,30 @@ body {
     left: 0;
     display: flex;
     align-items: center;
-    z-index: 10;
+   
 }
 
-.fa {
-    align-items: center;
-    display: flex;
-    font-size: 40px;
+.a_section_button {
+width: 160px;
+height:  60px;
+padding: 0 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #cb0e5a;
+margin: 4px 0;
+font-size: 22px;
+margin-left: -102px;
+transition: .4s;
 }
 
-.li_section_button {
-    padding: 10px 0;
-    background: darkcyan;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-}
 
 
 .a_section_button {
 
 
     height: 60px;
-    margin-left: -92px;
+    margin-left: -102px;
     padding: 0 20px;
     color: #fff;
     display: flex;
@@ -54,7 +50,7 @@ body {
 }
 
 .a_section_button:hover {
-    margin: 0;
+    margin-left: 0;
 }
 
 .a_section_button::after {
@@ -247,7 +243,7 @@ ul li a:hover::after {
 }
 
 .About .contener {
-    max-width: 789px;
+    max-width: 1000px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -258,10 +254,9 @@ ul li a:hover::after {
 }
 
 .About .contener .content h2 {
-
-    margin: 0 auto;
     color: #fff;
     font-size: 30px;
+    width: 95%;
     order: 2;
 }
 
@@ -279,7 +274,8 @@ ul li a:hover::after {
 }
 
 .About .contener .content .image {
-    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .About .contener .content .image img {
@@ -386,8 +382,8 @@ ul li a:hover::after {
     overflow: hidden;
     position: relative;
     display: flex;
-top: 0;
-left: 0;
+    top: 0;
+    left: 0;
     width: 400px;
     height: auto;
 }
