@@ -345,7 +345,7 @@ ul li a:hover::after {
 
 .Skills .contener .boxes .box {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-    padding: 20px 80px;
+    padding: 20px 0;
     transition: scale 300ms;
     margin-top: 40px;
 }
@@ -434,7 +434,11 @@ ul li a:hover::after {
 .work .contener .image:hover .btns {
     top: 0;
 }
-
+@media (max-width:991px) {
+    .work .contener .image{
+        width:auto;
+    }
+}
 .certificate .contener h1 {
     font-size: 50px;
     color: #fff;
@@ -457,11 +461,12 @@ ul li a:hover::after {
     border: 2px solid black;
     position: relative;
     display: flex;
-    padding: 38px 10px;
+    width: 50%;
 }
 
 .certificate .contener .image img {
     margin: 0 auto;
+    width: 100%;
 }
 
 .certificate .contener .box_images {
@@ -502,7 +507,16 @@ ul li a:hover::after {
 .certificate .contener .image:hover .btns {
     top: 0;
 }
+@media (max-width:991px) {
+    .certificate .contener .image{
+         width: auto
+         ;
+        img{
+            width: 100%;
 
+        }
+    }
+}
 
 .Contact_Us {
     margin-bottom: 80px;
@@ -510,6 +524,7 @@ ul li a:hover::after {
 
 .Contact_Us .contener h1 {
     font-size: 50px;
+    
     color: #fff;
     border-bottom: 4px solid #ff014f;
     display: inline-block;
