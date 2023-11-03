@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e449f21b4a.js" crossorigin="anonymous"></script>
     <title>portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,28 +16,35 @@
     <div class="section_button">
         <ul class="ul_section_button">
             <li class="li_section_button">
-                <a class="a_section_button">linkedin
-
-                    <i class="fa fa-linkedin"></i>
-                </a>
+                <div class="linkedin">
+                    <a class="a_section_button">linkedin
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
             </li>
             <li class="li_section_button">
-                <a class="a_section_button">Github
+                <div class="github">
 
-                    <i class="fa fa-github"></i>
-                </a>
+                    <a class="a_section_button">Github
+
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
             </li>
             <li class="li_section_button">
-                <a class="a_section_button">Email
-                    <i class="fa fa-envelope"></i>
-                </a>
-                    
+                <div class="email">
+                    <a class="a_section_button">Email
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
             </li>
+
         </ul>
         <div className="hidden fixed h-full left-0 lg:flex items-center z-20">
 
         </div>
     </div>
+    <!--  header section -->
     <header>
         <div class="contener">
             <nav class="nav-bar">
@@ -83,11 +89,13 @@
         </div>
     </header>
     <main>
+        <!--  home section  -->
         <section class="Home">
             <div class="contener">
 
                 <div class="content">
                     <h4>
+                        <span class="hand-icon">👋</span>
                         Hi. my name is
                     </h4>
                     <h1>
@@ -128,11 +136,12 @@
                 </div>
             </div>
         </section>
+        <!--  skills sections -->
         <section class="Skills">
             <div class="contener">
-                <h1>
+                <h2>
                     skills
-                </h1>
+                </h2>
                 <p>
                     These are the technologies I've worked with
                 </p>
@@ -140,108 +149,141 @@
                     <div class="box-1">
                         <div class="box">
                             <img src="assets/images/html.2ba4fabc69a89a8f71e6.png" alt="">
-                            <h2>
+                            <h3>
                                 Html
-                            </h2>
+                            </h3>
                         </div>
 
                         <div class="box">
                             <img src="assets/images/css.69a82c2d9e45c933a9cb.png" alt="">
-                            <h2>
+                            <h3>
                                 Css
-                            </h2>
+                            </h3>
                         </div>
 
                         <div class="box">
                             <img src="assets/images/tailwind.e47ac876b8d4d0bba47a.png" alt="">
-                            <h2>
+                            <h3>
                                 Tailwind
-                            </h2>
+                            </h3>
                         </div>
                         <div class="box">
                             <img src="assets/images/bootstrap.06d3bf93b0487397480a.png" alt="">
-                            <h2>
+                            <h3>
                                 Bootstrap
-                            </h2>
+                            </h3>
                         </div>
                         <div class="box">
                             <img src="assets/images/sass.a2591e27bc692562995c.png" alt="">
-                            <h2>
+                            <h3>
                                 Sass
-                            </h2>
+                            </h3>
                         </div>
                         <div class="box">
                             <img src="assets/images/javascript.1ccd6ef9bb1f9c84ef00.png" alt="">
-                            <h2>
+                            <h3>
                                 Javascript
-                            </h2>
+                            </h3>
                         </div>
                         <div class="box">
                             <img src="assets/images/github.3b9e32903aa89111875d.png" alt="">
-                            <h2>
+                            <h3>
                                 Github
-                            </h2>
+                            </h3>
                         </div>
                         <div class="box">
                             <img src="assets/images/Untitled.png" alt="">
-                            <h2>
+                            <h3>
                                 Git
-                            </h2>
+                            </h3>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+        <!--  work section -->
         <section class="work">
             <div class="contener">
-                <h1>
+                <h2>
                     Work
-                </h1>
+                </h2>
                 <p>
                     These are the technologies I've worked with
                 </p>
-                <div class="box_images">
-                    <div class="image">
-                        <img src="./assets/images/screencapture-mahdi-lotfi-github-io-dentist-website-2023-08-10-16_43_31.png"
-                            alt="">
-                        <div class="btns">
-                            <span>demo</span>
-                            <span>code</span>
+                <div class="box-card">
+                    <div class="box_images">
+                        <div class="image">
+                            <img src="./assets/images/keyboarda.png" alt="">
+                            <div class="btns">
+                                <span>demo</span>
+                                <span>code</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box_images">
+                        <div class="image">
+                            <img src="./assets/images/delivery.png" alt="">
+                            <div class="btns">
+                                <span>demo</span>
+                                <span>code</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="box_images">
+                        <div class="image">
+                            <img src="./assets/images/bootcamp.png" alt="">
+                            <div class="btns">
+                                <span>demo</span>
+                                <span>code</span>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
+            </div>
+
             </div>
             </div>
         </section>
+        <!--  certificate section  -->
         <section class="certificate">
             <div class="contener">
-                <h1>
+                <h2>
                     certificate
-                </h1>
+                </h2>
                 <p>
                     This is my certificate
                 </p>
-                <div class="box_images">
-                    <div class="image">
-                        <img src="./assets/images/CERTIFICATE_LANDING_PAGE~2LNQ7JWKQB66.jpeg" alt="">
-                        <div class="btns">
-                            <span>
-                                <a href="https://coursera.org/verify/2LNQ7JVKQB66">view</a></span>
+                <div class="box-card">
+                    <div class="box_images">
+                        <div class="image">
+                            <img src="./assets/images/CERTIFICATE_LANDING_PAGE~2LNQ7JWKQB66.jpeg" alt="">
+                            <div class="btns">
+                                <span>
+                                    <a href="https://coursera.org/verify/2LNQ7JVKQB66"></a>view</span>
 
+                            </div>
                         </div>
+                    </div>
+                    <div class="box_images">
+
+                    </div>
+                    <div class="box_images">
+
                     </div>
                 </div>
             </div>
         </section>
+        <!--  contact us section -->
         <section class="Contact_Us">
             <div class="contener">
                 <div class="content">
 
-                    <h1>
+                    <h2>
                         Contact Us
-                    </h1>
+                    </h2>
                     <form action="">
                         <input type="name" placeholder="Enter your name">
                         <input type="email" placeholder="Enter your email">

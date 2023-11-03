@@ -2,14 +2,45 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: rgb(10, 25, 47);
-    font-family: 'Poppins', sans-serif;
-    z-index: -1;
+    background-color: #0a192f;
 }
+
+.section_button .ul_section_button .li_section_button .linkedin a {
+    background-color: #2d68e6;
+}
+
+.section_button .ul_section_button .li_section_button .github a {
+    background-color: #333333;
+}
+
+.section_button .ul_section_button .li_section_button .email a {
+    background-color: #6cc3b3;
+}
+button {
+    padding: 15px 65px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid;
+    transition: .4s;
+
+}
+button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #db2777;
+    cursor: pointer;
+
+}
+
 
 .section_button {
     position: fixed;
@@ -17,28 +48,25 @@ body {
     left: 0;
     display: flex;
     align-items: center;
-   
+
 }
 
 .a_section_button {
-width: 160px;
-height:  60px;
-padding: 0 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #cb0e5a;
-margin: 4px 0;
-font-size: 22px;
-margin-left: -102px;
-transition: .4s;
+    width: 160px;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+    font-size: 22px;
+    margin-left: -102px;
+    transition: .4s;
 }
 
 
 
 .a_section_button {
-
-
     height: 60px;
     margin-left: -102px;
     padding: 0 20px;
@@ -69,7 +97,7 @@ ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff014f;
+    background-color: #db2777;
     bottom: -5px;
     left: 0;
     transition: .3s;
@@ -80,15 +108,16 @@ ul li a:hover::after {
 }
 
 @media (max-width:991px) {
-   
-    .section_button{
-       display: none;
+
+    .section_button {
+        display: none;
 
     }
-    }
+}
+
 .contener {
     max-width: 1000px;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -121,7 +150,7 @@ ul li a:hover::after {
 }
 
 .nav-bar ul li a:hover {
-    color: #ff014f;
+    color: #db2777;
 }
 
 .nav-bar .imag {
@@ -131,7 +160,7 @@ ul li a:hover::after {
 }
 
 .nav-bar .imag .imag-title {
-    color: #ff014f;
+    color: #db2777;
 }
 
 .imag img {
@@ -142,6 +171,9 @@ ul li a:hover::after {
 }
 
 @media (max-width:991px) {
+    .nav-bar{
+        margin-top: 10px;
+    }
     .nav-bar .ham {
         display: block;
         color: #fff;
@@ -164,26 +196,7 @@ ul li a:hover::after {
     align-items: center;
 }
 
-.Home button {
-    padding: 15px 65px;
-    border-radius: 5px;
-    background: transparent;
-    color: #fff;
-    border: 2px solid;
-    transition: .4s;
 
-}
-
-.Home button a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-}
-
-.Home button:hover {
-    background-color: #cb0e5a;
-
-}
 
 .Home .contener .none {
     margin: 300px;
@@ -191,7 +204,7 @@ ul li a:hover::after {
 
 .Home .contener h4 {
     font-size: 22px;
-    color: #ff014f;
+    color: #db2777;
 }
 
 .Home .contener h1 {
@@ -202,6 +215,7 @@ ul li a:hover::after {
 
 .Home .contener p {
     padding-bottom: 20px;
+    line-height: 20px;
 }
 
 @media (max-width:991px) {
@@ -234,7 +248,7 @@ ul li a:hover::after {
     color: #fff;
     font-size: 40px;
     line-height: 55px;
-    border-bottom: 4px solid #ff014f;
+    border-bottom: 4px solid #db2777;
     display: inline-block;
     justify-content: center;
 
@@ -249,7 +263,6 @@ ul li a:hover::after {
 }
 
 .About .contener .content .title {
-    width: 65%;
     flex: 1;
 }
 
@@ -261,7 +274,8 @@ ul li a:hover::after {
 }
 
 .About .contener .content p {
-
+    line-height: 20px;
+    padding-top: 20px;
     margin: 0 auto;
     order: 1;
 }
@@ -305,11 +319,12 @@ ul li a:hover::after {
         width: 100%;
         text-align: center;
         order: 2;
+        padding-top: 20px;
     }
 
-    .Skills .contener h1 {
+    .Skills .contener h2 {
         color: #fff;
-        border-bottom: 4px solid #ff014f;
+        border-bottom: 4px solid #db2777;
         display: inline-block;
         font-size: 50px;
         padding-top: 200px;
@@ -317,10 +332,10 @@ ul li a:hover::after {
     }
 }
 
-.Skills .contener h1 {
+.Skills .contener h2 {
     font-size: 50px;
     color: #fff;
-    border-bottom: 4px solid #ff014f;
+    border-bottom: 4px solid #db2777;
     display: inline-block;
     padding-top: 200px;
 
@@ -331,7 +346,7 @@ ul li a:hover::after {
     margin-top: 20px;
 }
 
-.Skills .boxes .box h2 {
+.Skills .boxes .box h3 {
     color: #fff;
     justify-content: center;
     display: flex;
@@ -361,17 +376,17 @@ ul li a:hover::after {
     text-align: center;
 }
 
-.work .contener h1 {
+.work .contener h2 {
     font-size: 50px;
     color: #fff;
-    border-bottom: 4px solid #ff014f;
+    border-bottom: 4px solid #db2777;
     display: inline-block;
     padding-top: 200px;
 }
 
 .work .contener p {
     color: rgb(91, 104, 130);
-    padding: 10px;
+    padding: 15px 0px;
 }
 
 .work .contener .image {
@@ -384,30 +399,32 @@ ul li a:hover::after {
     display: flex;
     top: 0;
     left: 0;
-    width: 400px;
     height: auto;
 }
 
 .work .contener .image img {
-   
+
 
     width: 100%;
     z-index: -1;
 }
 
-.work .contener .box_images {
+.work .contener .box-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    text-align: center;
-    gap: 25px;
-    margin-top: 30px;
-    display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.work .contener .box_images {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 
 }
 
 .work .contener .image .btns {
     position: absolute;
-    background-color: #ff014f;
+    background-color: #db2777;
     background-color: rgba(10, 40, 120, .8);
     z-index: 1;
     width: 100%;
@@ -417,6 +434,7 @@ ul li a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+
     transition: .3s;
 }
 
@@ -434,15 +452,23 @@ ul li a:hover::after {
 .work .contener .image:hover .btns {
     top: 0;
 }
+
 @media (max-width:991px) {
-    .work .contener .image{
-        width:auto;
+    .work .contener .image {
+        width: auto;
     }
 }
-.certificate .contener h1 {
+
+.certificate .contener .box-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.certificate .contener h2 {
     font-size: 50px;
     color: #fff;
-    border-bottom: 4px solid #ff014f;
+    border-bottom: 4px solid #db2777;
     display: inline-block;
     padding-top: 200px;
 }
@@ -462,6 +488,8 @@ ul li a:hover::after {
     position: relative;
     display: flex;
     width: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .certificate .contener .image img {
@@ -480,7 +508,7 @@ ul li a:hover::after {
 
 .certificate .contener .image .btns {
     position: absolute;
-    background-color: #ff014f;
+    background-color: #db2777;
     background-color: rgba(10, 40, 120, .8);
     z-index: 1;
     width: 100%;
@@ -507,11 +535,12 @@ ul li a:hover::after {
 .certificate .contener .image:hover .btns {
     top: 0;
 }
+
 @media (max-width:991px) {
-    .certificate .contener .image{
-         width: auto
-         ;
-        img{
+    .certificate .contener .image {
+        width: auto;
+
+        img {
             width: 100%;
 
         }
@@ -522,11 +551,11 @@ ul li a:hover::after {
     margin-bottom: 80px;
 }
 
-.Contact_Us .contener h1 {
+.Contact_Us .contener h2 {
     font-size: 50px;
-    
+
     color: #fff;
-    border-bottom: 4px solid #ff014f;
+    border-bottom: 4px solid #db2777;
     display: inline-block;
     padding-top: 200px;
 }
@@ -559,23 +588,3 @@ ul li a:hover::after {
     font-size: 20px;
     resize: none;
 }
-
-.Contact_Us .contener .content button {
-    padding: 15px 65px;
-    border-radius: 5px;
-    background: transparent;
-    color: #fff;
-    border: 2px solid;
-    transition: .4s;
-}
-
-.Contact_Us .contener .content button a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.Contact_Us .contener .content button:hover {
-    background-color: #ff014f;
-}
-
