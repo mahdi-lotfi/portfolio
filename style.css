@@ -20,6 +20,7 @@ body {
 .section_button .ul_section_button .li_section_button .email a {
     background-color: #6cc3b3;
 }
+
 button {
     padding: 15px 65px;
     border-radius: 5px;
@@ -29,6 +30,7 @@ button {
     transition: .4s;
 
 }
+
 button a {
     font-size: 20px;
     text-decoration: none;
@@ -47,8 +49,7 @@ button:hover {
     height: 100%;
     left: 0;
     display: flex;
-    align-items: center;
-
+  ;
 }
 
 .a_section_button {
@@ -60,21 +61,13 @@ button:hover {
     align-items: center;
     margin: 4px 0;
     font-size: 22px;
-    margin-left: -102px;
     transition: .4s;
-}
-
-
-
-.a_section_button {
-    height: 60px;
-    margin-left: -102px;
-    padding: 0 20px;
     color: #fff;
     display: flex;
+    margin-left: -102px;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .a_section_button:hover {
@@ -92,21 +85,6 @@ ul li a {
     color: black;
 }
 
-ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #db2777;
-    bottom: -5px;
-    left: 0;
-    transition: .3s;
-}
-
-ul li a:hover::after {
-    width: 100%;
-}
-
 @media (max-width:991px) {
 
     .section_button {
@@ -115,7 +93,7 @@ ul li a:hover::after {
     }
 }
 
-.contener {
+.container {
     max-width: 1000px;
     padding: 0 20px;
     margin: 0 auto;
@@ -171,9 +149,10 @@ ul li a:hover::after {
 }
 
 @media (max-width:991px) {
-    .nav-bar{
+    .nav-bar {
         margin-top: 10px;
     }
+
     .nav-bar .ham {
         display: block;
         color: #fff;
@@ -191,43 +170,43 @@ ul li a:hover::after {
 
 }
 
-.Home .contener {
+.Home .container {
     display: flex;
     align-items: center;
 }
 
 
 
-.Home .contener .none {
+.Home .container .none {
     margin: 300px;
 }
 
-.Home .contener h4 {
+.Home .container h4 {
     font-size: 22px;
     color: #db2777;
 }
 
-.Home .contener h1 {
+.Home .container h1 {
     color: #fff;
     font-size: 55px;
     padding: 10px 0;
 }
 
-.Home .contener p {
+.Home .container p {
     padding-bottom: 20px;
     line-height: 20px;
 }
 
 @media (max-width:991px) {
-    .Home .contener {
+    .Home .container {
         margin-top: 40px;
     }
 
-    .Home .contener .none {
+    .Home .container .none {
         display: none;
     }
 
-    .Home .contener .content {
+    .Home .container .content {
         text-align: center;
     }
 }
@@ -256,43 +235,43 @@ ul li a:hover::after {
 
 }
 
-.About .contener {
+.About .container {
     max-width: 1000px;
     padding: 0 30px;
     margin: 0 auto;
 }
 
-.About .contener .content .title {
+.About .container .content .title {
     flex: 1;
 }
 
-.About .contener .content h2 {
+.About .container .content h2 {
     color: #fff;
     font-size: 30px;
     width: 95%;
     order: 2;
 }
 
-.About .contener .content p {
+.About .container .content p {
     line-height: 20px;
     padding-top: 20px;
     margin: 0 auto;
     order: 1;
 }
 
-.About .contener .content {
+.About .container .content {
     display: flex;
     align-items: center;
     gap: 25px;
 
 }
 
-.About .contener .content .image {
+.About .container .content .image {
     display: flex;
     justify-content: flex-end;
 }
 
-.About .contener .content .image img {
+.About .container .content .image img {
     width: 300px;
     border-radius: 25px;
 
@@ -304,25 +283,25 @@ ul li a:hover::after {
         padding-top: 220px;
     }
 
-    .About .contener .content {
+    .About .container .content {
         flex-direction: column;
     }
 
-    .About .contener .content h2 {
+    .About .container .content h2 {
         width: 100%;
         text-align: center;
         order: 1;
 
     }
 
-    .About .contener .content p {
+    .About .container .content p {
         width: 100%;
         text-align: center;
         order: 2;
         padding-top: 20px;
     }
 
-    .Skills .contener h2 {
+    .Skills .container h2 {
         color: #fff;
         border-bottom: 4px solid #db2777;
         display: inline-block;
@@ -332,7 +311,7 @@ ul li a:hover::after {
     }
 }
 
-.Skills .contener h2 {
+.Skills .container h2 {
     font-size: 50px;
     color: #fff;
     border-bottom: 4px solid #db2777;
@@ -341,7 +320,7 @@ ul li a:hover::after {
 
 }
 
-.Skills .contener p {
+.Skills .container p {
     color: rgb(91, 104, 130);
     margin-top: 20px;
 }
@@ -354,29 +333,29 @@ ul li a:hover::after {
 
 
 
-.Skills .contener .boxes .box img {
+.Skills .container .boxes .box img {
     width: 80px;
 }
 
-.Skills .contener .boxes .box {
+.Skills .container .boxes .box {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
     padding: 20px 0;
     transition: scale 300ms;
     margin-top: 40px;
 }
 
-.Skills .contener .boxes .box:hover {
+.Skills .container .boxes .box:hover {
     scale: 1.1;
 }
 
-.Skills .contener .boxes .box-1 {
+.Skills .container .boxes .box-1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     gap: 33px;
     text-align: center;
 }
 
-.work .contener h2 {
+.work .container h2 {
     font-size: 50px;
     color: #fff;
     border-bottom: 4px solid #db2777;
@@ -384,12 +363,12 @@ ul li a:hover::after {
     padding-top: 200px;
 }
 
-.work .contener p {
+.work .container p {
     color: rgb(91, 104, 130);
     padding: 15px 0px;
 }
 
-.work .contener .image {
+.work .container .image {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     gap: 20px;
@@ -402,27 +381,27 @@ ul li a:hover::after {
     height: auto;
 }
 
-.work .contener .image img {
+.work .container .image img {
 
 
     width: 100%;
     z-index: -1;
 }
 
-.work .contener .box-card {
+.work .container .box-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.work .contener .box_images {
+.work .container .box_images {
     height: 300px;
     overflow: hidden;
     position: relative;
 
 }
 
-.work .contener .image .btns {
+.work .container .image .btns {
     position: absolute;
     background-color: #db2777;
     background-color: rgba(10, 40, 120, .8);
@@ -438,7 +417,7 @@ ul li a:hover::after {
     transition: .3s;
 }
 
-.work .contener .image .btns span {
+.work .container .image .btns span {
     margin: 0 20px;
     padding: 10px 25px;
     cursor: pointer;
@@ -449,23 +428,23 @@ ul li a:hover::after {
     z-index: 2;
 }
 
-.work .contener .image:hover .btns {
+.work .container .image:hover .btns {
     top: 0;
 }
 
 @media (max-width:991px) {
-    .work .contener .image {
+    .work .container .image {
         width: auto;
     }
 }
 
-.certificate .contener .box-card {
+.certificate .container .box-card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.certificate .contener h2 {
+.certificate .container h2 {
     font-size: 50px;
     color: #fff;
     border-bottom: 4px solid #db2777;
@@ -473,12 +452,12 @@ ul li a:hover::after {
     padding-top: 200px;
 }
 
-.certificate .contener p {
+.certificate .container p {
     color: rgb(91, 104, 130);
     padding: 10px;
 }
 
-.certificate .contener .image {
+.certificate .container .image {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     gap: 20px;
@@ -492,12 +471,12 @@ ul li a:hover::after {
     height: 100%;
 }
 
-.certificate .contener .image img {
+.certificate .container .image img {
     margin: 0 auto;
     width: 100%;
 }
 
-.certificate .contener .box_images {
+.certificate .container .box_images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     text-align: center;
@@ -506,7 +485,7 @@ ul li a:hover::after {
     display: inline-block;
 }
 
-.certificate .contener .image .btns {
+.certificate .container .image .btns {
     position: absolute;
     background-color: #db2777;
     background-color: rgba(10, 40, 120, .8);
@@ -521,7 +500,7 @@ ul li a:hover::after {
     transition: .3s;
 }
 
-.certificate .contener .image .btns span {
+.certificate .container .image .btns span {
     margin: 0 20px;
     padding: 10px 25px;
     cursor: pointer;
@@ -532,12 +511,12 @@ ul li a:hover::after {
     z-index: 2;
 }
 
-.certificate .contener .image:hover .btns {
+.certificate .container .image:hover .btns {
     top: 0;
 }
 
 @media (max-width:991px) {
-    .certificate .contener .image {
+    .certificate .container .image {
         width: auto;
 
         img {
@@ -551,7 +530,7 @@ ul li a:hover::after {
     margin-bottom: 80px;
 }
 
-.Contact_Us .contener h2 {
+.Contact_Us .container h2 {
     font-size: 50px;
 
     color: #fff;
@@ -560,14 +539,14 @@ ul li a:hover::after {
     padding-top: 200px;
 }
 
-.Contact_Us .contener form {
+.Contact_Us .container form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 30px 0px;
 }
 
-.Contact_Us .contener form input {
+.Contact_Us .container form input {
     background: rgb(0, 0, 27);
     border: none;
     padding: 10px 0;
@@ -577,7 +556,7 @@ ul li a:hover::after {
     font-size: 20px;
 }
 
-.Contact_Us .contener form textarea {
+.Contact_Us .container form textarea {
     height: 330px;
     background: rgb(0, 0, 27);
     border: none;
